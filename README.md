@@ -1,4 +1,4 @@
-# Readme File for Assignment for Session 7 - Functional Parameter
+# Readme File for Assignment for Session 7 - Scopes and Closures
 ### Created by Sriram Iyengar
 ## Session 4 - Functional Parameter
 - Global and Local Scopes
