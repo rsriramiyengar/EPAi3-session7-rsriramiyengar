@@ -1,6 +1,6 @@
 # Readme File for Assignment for Session 7 - Scopes and Closures
 ### Created by Sriram Iyengar
-## Session 4 - Functional Parameter
+## Session 7 - Scopes and Closures
 - Global and Local Scopes
 - Non Local Scopes 
 - Closures
@@ -69,14 +69,33 @@ You mustg write the tests that are MOST important and what "I" already have in m
 
 ### test_function_name_had_cap_letter 
 - checks if the Assignment code is function has capital letters 
+
+
 ### test_function_1_docstring_50_count():
-- Checks if function_1_docstring_50_count works  for all boundary condition
-### test_function_2_fibonacci():
+- Checks if function_1_docstring_50_count works  for all boundary condition  
+
+
+### test_function_5_fibonacci to test_function_5_fibonacci
 - Checks if function_2_fibonacci works
-### test_function_3_counter():
-- Checks if function_3_counter works  for all boundary condition   
-### test_function_4_counter():
+
+
+def test_function_6_fibonacci():
+    f1 = function_2_fibonacci()
+    assert bool(f1.__closure__) == True, "Please check the function it needs to be Closure "
+
+
+def test_function_7_fibonacci():
+    check1 = function_2_fibonacci()
+    for i in range(10):
+        test = check1()
+    assert test == 55, "Check function_2_fibonacci "
+
+
+### test_function_8_counter1 to test_function_14_counter1
 - Checks if function_3_counter works  for all boundary condition
+
+### test_function_15_counter2 to test_function_19_counter2
+- Checks if function_4_counter works  for all boundary condition
 
 For This Assignment we made use of Following imports 
 - pytest
@@ -91,7 +110,7 @@ Based on our understanding following concept
 - Used cases for counter creation
 
 ***
-> ![My Image](https://github.com/rsriramiyengar/EPAi-session8-rsriramiyengar/blob/master/images/Image01.JPG)
+> ![My Image](https://github.com/rsriramiyengar/EPAi3-session7-rsriramiyengar/blob/master/images/Image01.JPG)
 ***
 
 We are using python >3.8.3
