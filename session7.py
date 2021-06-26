@@ -59,7 +59,10 @@ def function_3_counter(fn: "Function Name for Counter"):
 
 def function_4_counter(fn: "Function Name for Counter", dict: "Input dictory name"):
     """This Function creates a counter for input function and updates it in given dictionary"""
+    cnt=0
     def inner(*args, **kwargs):
-        dict[fn.__name__] += 1
+        nonlocal cnt
+        cnt += 1
+        dict[fn.__name__] = cnt
         return fn(*args, **kwargs)
     return inner
